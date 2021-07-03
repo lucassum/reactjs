@@ -1,0 +1,21 @@
+main {
+    height: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container {
+    height: 90%;
+    width: 40%;
+    border-radius: 8px;
+    background-color: rgb(105, 103, 103);
+}
+
+.side-right {
+    width: 30%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
