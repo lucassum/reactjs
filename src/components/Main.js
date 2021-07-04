@@ -35,13 +35,20 @@ function Main () {
         const temp = [...squareState]
         temp[i] = xTurn ? 'X' : 'O'
         setSquareState(temp)
+        let needReset = false
         if (calculateWinner(temp)) {
             alert(`${xTurn ? 'X' : 'O'} é o vencedor!`)
             const temp = [...score]
             temp[xTurn ? 0 : 1] += 1
             setScore(temp)
-            reset()
+            needReset = true
         }
+        if (temp.filter(val => val).length === 9) {
+            alert(`Empatou!`)
+            needReset = true
+        }
+        if (needReset) reset()
+
         setXTurn(!xTurn)
 
     }
