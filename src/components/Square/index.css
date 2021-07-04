@@ -1,0 +1,18 @@
+button {
+    font-size: 32px;
+    width: 33.3%;
+    height: 33.3%;
+    background-color: #282c34;
+    color: white;
+    border: none;
+}
+
+button:nth-child(2), button:nth-child(5), button:nth-child(8) {
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+}
+
+button:nth-child(4), button:nth-child(5), button:nth-child(6) {
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+}

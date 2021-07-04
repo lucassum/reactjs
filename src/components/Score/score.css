@@ -1,0 +1,30 @@
+.score {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+
+.score>* {
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 0 16px;
+}
+
+.values {
+    display: flex;
+}
+
+.values>div {
+    width: 50%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.values>div:nth-child(1) {
+    border-right: solid 3px white;
+}
